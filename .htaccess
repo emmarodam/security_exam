@@ -1,0 +1,15 @@
+RewriteEngine On
+# RewriteCond %{REQUEST_URI}  !(\.png|\.jpg|\.webp|\.gif|\.jpeg|\.zip|\.css|\.svg|\.js|\.pdf)$
+# RewriteRule (.*) routes.php [QSA,L]
+ 
+#####
+RewriteRule ^$                /views/index.php [NC,L]
+RewriteRule ^admin$           /views/admin.php [NC,L]
+RewriteRule ^detective$       /views/detective.php [NC,L]
+RewriteRule ^citizen$         /views/citizen.php [NC,L]
+RewriteRule ^lawyer$          /views/lawyer.php [NC,L]
+
+RewriteRule ^login$           /views/login.php [NC,L]
+RewriteRule ^signup$          /views/signup.php [NC,L]
+RewriteRule ^error$           /views/error.php [NC,L]
+RewriteRule ^dashboard$       /views/dashboard.php [NC,L]
